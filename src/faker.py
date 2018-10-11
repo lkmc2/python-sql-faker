@@ -71,13 +71,15 @@ class Faker:
                         "param_type must be DataType value or a class extends RandomData ")
 
         # 实现了create( )方法的类
-        if hasattr(param_type, 'create'):
-            target = param_type
-        else:
-            # DataType类型的值
-            if type(param_type) == str:
-                param_type = DATA_TYPE_MAPPING.setdefault(param_type)
-            target = param_type()
+        # if hasattr(param_type, 'create'):
+        #     target = param_type
+        # else:
+        # DataType类型的值
+        if type(param_type) == str:
+            # 获取DataType类型对应的类
+            param_type = DATA_TYPE_MAPPING.setdefault(param_type)
+        # 实例化目标类
+        target = param_type()
 
         # 字符串两边加上单引号
         return "'%s'" % target.create()
