@@ -5,6 +5,7 @@ import random
 
 class AddressRandom(RandomData):
     """地址生成器（国内地址，详细到门牌号，如：四川省绵阳市盐亭县北利路738号）"""
+
     def create(self):
         city_name = random.choice(city_names)
         road_name = random.choice(road_names)
