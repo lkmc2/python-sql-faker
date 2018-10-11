@@ -1,5 +1,6 @@
 # coding=utf-8
 from asserts.asserts import Asserts
+from datatype import *
 import logging
 
 class Faker:

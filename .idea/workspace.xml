@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95926974-1829-4454-9a7a-d6e06520713c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/random/username_random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mapping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/random_data/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/random/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/faker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datatype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/address_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/address_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/age_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/age_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/email_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/email_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/id_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/id_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/phone_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/phone_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/random_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/random_abstract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/sex_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/sex_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/time_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/time_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random/username_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_data/username_random.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +30,10 @@
     <SUITE FILE_PATH="coverage/python_sql_faker$time_random.coverage" NAME="time_random Coverage Results" MODIFIED="1539248939333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/random" />
     <SUITE FILE_PATH="coverage/python_sql_faker$random.coverage" NAME="random Coverage Results" MODIFIED="1539228302443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/random" />
     <SUITE FILE_PATH="coverage/python_sql_faker$random_abstract.coverage" NAME="random_abstract Coverage Results" MODIFIED="1539229514723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/random" />
+    <SUITE FILE_PATH="coverage/python_sql_faker$datatype_mapping.coverage" NAME="datatype_mapping Coverage Results" MODIFIED="1539251291561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/python_sql_faker$faker.coverage" NAME="faker Coverage Results" MODIFIED="1539227804231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/python_sql_faker$main.coverage" NAME="main Coverage Results" MODIFIED="1539249975705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/python_sql_faker$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1539251281407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/python_sql_faker$test.coverage" NAME="test Coverage Results" MODIFIED="1539249614501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/random" />
   </component>
   <component name="DatabaseView">
@@ -36,20 +52,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="random_abstract.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/random_abstract.py">
+      <file leaf-file-name="id_random.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/random_data/id_random.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#15#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uuid.py" pinned="false" current-in-tab="false">
+        <entry file="file://H:/Python2.7/Lib/uuid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="578" selection-start-line="578" selection-end-line="578" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="username_random.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/random_data/username_random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#15#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/random_data/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faker.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/faker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#15#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapping.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mapping.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/test.py">
+        <entry file="file://$PROJECT_DIR$/src/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="133">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -57,98 +127,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/email_random.py">
+      <file leaf-file-name="datatype.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datatype.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="id_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/id_random.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phone_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/phone_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sex_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/sex_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="address_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/address_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="age_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/age_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time_random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/random/time_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="username_random.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/random/username_random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -169,7 +161,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/asserts/asserts.py" />
-        <option value="$PROJECT_DIR$/src/faker.py" />
         <option value="$PROJECT_DIR$/src/random/random.py" />
         <option value="$PROJECT_DIR$/src/random/random_impl.py" />
         <option value="$PROJECT_DIR$/src/random/random_abstract.py" />
@@ -182,6 +173,13 @@
         <option value="$PROJECT_DIR$/src/random/time_random.py" />
         <option value="$PROJECT_DIR$/src/random/test.py" />
         <option value="$PROJECT_DIR$/src/random/username_random.py" />
+        <option value="$PROJECT_DIR$/src/random/__init__.py" />
+        <option value="$PROJECT_DIR$/src/datatype.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/faker.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/datatype_mapping.py" />
+        <option value="$PROJECT_DIR$/src/mapping.py" />
       </list>
     </option>
   </component>
@@ -221,13 +219,7 @@
               <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="asserts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="random" type="462c0819:PsiDirectoryNode" />
+              <item name="random_data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -242,6 +234,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PythonWorkplace\python-sql-faker\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\PythonWorkplace\python-sql-faker\src\random" />
     </key>
@@ -258,8 +253,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="faker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.datatype_mapping">
+    <configuration name="datatype_mapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-sql-faker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,13 +267,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/faker.py" />
+      <option name="SCRIPT_NAME" value="F:\PythonWorkplace\python-sql-faker\src\mapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-sql-faker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,18 +281,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/random" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\PythonWorkplace\python-sql-faker\src\random\random_abstract.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="random_abstract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-sql-faker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,12 +300,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/random" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/random/random_abstract.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,7 +324,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/random/test.py" />
+      <option name="SCRIPT_NAME" value="F:\PythonWorkplace\python-sql-faker\src\test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,19 +350,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.faker" />
-      <item itemvalue="Python.random" />
-      <item itemvalue="Python.random_abstract" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.time_random" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.datatype_mapping" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.datatype_mapping" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.time_random" />
-        <item itemvalue="Python.random_abstract" />
-        <item itemvalue="Python.random" />
-        <item itemvalue="Python.faker" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539248977234</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加用户名生成器">
+      <created>1539249625385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539249625385</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -429,9 +431,9 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25839794" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25839794" />
       <window_info anchor="bottom" id="Terminal" weight="0.32903227" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.37091988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37091988" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32945737" />
@@ -459,7 +461,8 @@
     <MESSAGE value="添加手机号生成器" />
     <MESSAGE value="添加性别生成器" />
     <MESSAGE value="添加时间生成器" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加时间生成器" />
+    <MESSAGE value="添加用户名生成器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加用户名生成器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,17 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/faker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/random_abstract.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/random_abstract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
@@ -512,17 +505,7 @@
         <state relative-caret-position="-741" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/address_random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/email_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/email_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="13" />
@@ -532,7 +515,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/sex_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/sex_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
@@ -542,7 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/age_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/age_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="13" />
@@ -552,7 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/time_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/time_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="13" />
@@ -562,27 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/id_random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/phone_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/phone_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
@@ -592,13 +555,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random/username_random.py">
+    <entry file="file://$PROJECT_DIR$/src/random_data/username_random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="e#15#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datatype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random_data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/faker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/Python2.7/Lib/uuid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="578" selection-start-line="578" selection-end-line="578" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random_data/id_random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#15#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random_data/address_random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#15#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
