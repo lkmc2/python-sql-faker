@@ -7,6 +7,9 @@ from random_data.sex_random import SexRandom
 from random_data.time_random import TimeRandom
 from random_data.username_random import UserNameRandom
 
+import datetime
+import time
+
 random = AddressRandom()
 print random.create()
 
@@ -34,3 +37,12 @@ print random.create()
 print hasattr(random, 'create')
 
 print type('123') == str
+
+def create_time(year, month, day):
+    print time.mktime(datetime.datetime(year, month, day).timetuple())
+
+print time.mktime(datetime.datetime.now().timetuple())
+
+create_time(2017, 3, 12)
+
+print datetime.datetime.fromtimestamp(1489248000.0)
