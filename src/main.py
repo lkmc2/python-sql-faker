@@ -1,7 +1,5 @@
 import random
-from datatype import DataType
-from sql_faker import Faker
-from values import Values, Times
+from sql_faker import Faker, DataType, Values, Times
 
 class EnglishNameRandom:
     def create(self):
@@ -17,7 +15,7 @@ Faker.table_name("user") \
     .param("age", DataType.AGE) \
     .param("sex", DataType.SEX) \
     .param("email", DataType.EMAIL) \
-    .insert_count(1) \
+    .insert_count(5) \
     .execute()
 
 Faker.table_name("user") \
@@ -40,6 +38,12 @@ Faker.table_name("user") \
 
 Faker.table_name("user") \
     .param("id", Values.of_float_range(13.88, 22.33)) \
+    .param("name", DataType.USERNAME) \
+    .insert_count(1) \
+    .execute()
+
+Faker.table_name("user") \
+    .param("id", Values.of_float_range(13.88, 22.33, 6)) \
     .param("name", DataType.USERNAME) \
     .insert_count(1) \
     .execute()

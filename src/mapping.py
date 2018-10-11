@@ -21,14 +21,3 @@ DATA_TYPE_MAPPING = {
     DataType.SEX: SexRandom,
     DataType.EMAIL: EmailRandom
 }
-
-# result = mapping[DataType.ID]
-# print result().create()
-
-result = DATA_TYPE_MAPPING[DataType.ADDRESS]
-print result().create()
-
-# <class 'abc.ABCMeta'>
-print type(UserNameRandom)
-
-print DATA_TYPE_MAPPING.setdefault(DataType.ID)
