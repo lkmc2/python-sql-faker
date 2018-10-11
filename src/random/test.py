@@ -4,6 +4,7 @@ from email_random import EmailRandom
 from id_random import IdRandom
 from phone_random import PhoneRandom
 from sex_random import SexRandom
+from src.random.time_random import TimeRandom
 
 random = AddressRandom()
 print random.create()
@@ -22,3 +23,7 @@ print random.create()
 
 random = SexRandom()
 print random.create()
+
+random = TimeRandom()
+print random.create()
+
