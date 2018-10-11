@@ -1,13 +1,14 @@
 # coding=utf-8
+
 from datatype import DataType
-from random_data.id_random import IdRandom
-from random_data.username_random import UserNameRandom
-from random_data.phone_random import PhoneRandom
-from random_data.time_random import TimeRandom
 from random_data.address_random import AddressRandom
 from random_data.age_random import AgeRandom
-from random_data.sex_random import SexRandom
 from random_data.email_random import EmailRandom
+from random_data.id_random import IdRandom
+from random_data.phone_random import PhoneRandom
+from random_data.sex_random import SexRandom
+from random_data.time_random import TimeRandom
+from random_data.username_random import UserNameRandom
 
 # 数据类型映射关系
 DATA_TYPE_MAPPING = {
@@ -26,3 +27,8 @@ DATA_TYPE_MAPPING = {
 
 result = DATA_TYPE_MAPPING[DataType.ADDRESS]
 print result().create()
+
+# <class 'abc.ABCMeta'>
+print type(UserNameRandom)
+
+print DATA_TYPE_MAPPING.setdefault(DataType.ID)

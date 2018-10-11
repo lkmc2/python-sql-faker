@@ -1,9 +1,12 @@
 # coding=utf-8
-from asserts.asserts import Asserts
-from datatype import *
 import logging
+from asserts.asserts import Asserts
+from mapping import DATA_TYPE_MAPPING
+
 
 class Faker:
+    """数据伪造器"""
+
     def __init__(self, table_name):
         self.table_name = table_name
         self.count = None
@@ -17,7 +20,7 @@ class Faker:
 
     def param(self, param_name, param_type):
         """设置字段名和对应的类型值"""
-        self.param_map.update({param_name : param_type})
+        self.param_map.update({param_name: param_type})
         return self
 
     def insert_count(self, count):
@@ -45,29 +48,36 @@ class Faker:
 
     def generate_sql(self):
         """生成SQL语句"""
-        param_names, param_values =  self.generate_param_name_and_value()
+        param_names, param_values = self.generate_param_name_and_value()
 
         sql = 'insert into %s(%s) values(%s)' % (self.table_name, param_names, param_values)
         self.sql_list.append(sql)
-
         logging.debug(sql)
 
     def generate_param_name_and_value(self):
-        """生成参数名和参数值"""
+        """生成所有参数名和参数值"""
         sql_param_names = ''
         sql_param_values = ''
         for param_name, param_type in self.param_map.iteritems():
             sql_param_names += param_name + ','
+            sql_param_values += self.create_param_values(param_type) + ','
+        # 所有参数名，所有参数值
+        return sql_param_names[:-1], sql_param_values[:-1]
 
-        print 'sql_param_names = ' + sql_param_names
+    @staticmethod
+    def create_param_values(param_type):
+        """创建所有参数值"""
+        Asserts.is_true(type(param_type) == str or hasattr(param_type, 'create'),
+                        "param_type must be DataType value or a class extends RandomData ")
 
-        sql_param_names = sql_param_names[:-1]
-        return sql_param_names, sql_param_values
+        # 实现了create( )方法的类
+        if hasattr(param_type, 'create'):
+            target = param_type
+        else:
+            # DataType类型的值
+            if type(param_type) == str:
+                param_type = DATA_TYPE_MAPPING.setdefault(param_type)
+            target = param_type()
 
-
-Faker.table_name("user")\
-    .param("123", "456")\
-    .param("789", "123")\
-    .insert_count(5)\
-    .execute()
-# print 'insert into %s(%s) values(%s)' % ('abc', 123, '789')
+        # 字符串两边加上单引号
+        return "'%s'" % target.create()

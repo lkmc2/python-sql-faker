@@ -31,3 +31,6 @@ print random.create()
 random = UserNameRandom()
 print random.create()
 
+print hasattr(random, 'create')
+
+print type('123') == str
