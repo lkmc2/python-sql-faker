@@ -1,8 +1,9 @@
 from src.random.address_random import AddressRandom
-from src.random.age_random import AgeRandom
-from src.random.email_random import EmailRandom
-from src.random.id_random import IdRandom
-from src.random.phone_random import PhoneRandom
+from age_random import AgeRandom
+from email_random import EmailRandom
+from id_random import IdRandom
+from phone_random import PhoneRandom
+from sex_random import SexRandom
 
 random = AddressRandom()
 print random.create()
@@ -17,4 +18,7 @@ random = IdRandom()
 print random.create()
 
 random = PhoneRandom()
+print random.create()
+
+random = SexRandom()
 print random.create()
