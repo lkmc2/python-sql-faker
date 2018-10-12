@@ -2,6 +2,7 @@
 from datatype import DataType
 from values import Values
 from times import Times
+from db_utils import DBHelper
 from faker import Faker
 
 # 数据类型
@@ -12,6 +13,9 @@ Values = Values
 
 # 时间范围设置器
 Times = Times
+
+# 数据库连接池助手
+DBHelper = DBHelper
 
 # 数据伪造器
 Faker = Faker

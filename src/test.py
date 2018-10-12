@@ -1,48 +1,52 @@
-from src.random_data.address_random import AddressRandom
-from random_data.age_random import AgeRandom
-from random_data.email_random import EmailRandom
-from random_data.id_random import IdRandom
-from random_data.phone_random import PhoneRandom
-from random_data.sex_random import SexRandom
-from random_data.time_random import TimeRandom
-from random_data.username_random import UserNameRandom
+from sql_faker import Faker, DataType, DBHelper
 
-import datetime
-import time
+import pymysql
+from DBUtils.PooledDB import PooledDB
 
-random = AddressRandom()
-print random.create()
+# DBHelper.db_setting('python_sql_faker')
+#
+# db = DBHelper()
+#
+# res = db.execute("insert into user(id, name) values('666', 'jack')")
+#
+# db.execute("select * from user where id = '666'")
 
-random = AgeRandom()
-print random.create()
+POOL = PooledDB(creator=pymysql,
+                              maxconnections=5,
+                              host='localhost',
+                              user='root',
+                              passwd='123456',
+                              db='python_sql_faker',
+                              port=3306)
+conn = POOL.connection()
+cur = conn.cursor()
 
-random = EmailRandom()
-print random.create()
+cur.execute("insert into user(id, name) values('666', 'jack')")
 
-random = IdRandom()
-print random.create()
+cur.execute("select * from user where id = '666'")
 
-random = PhoneRandom()
-print random.create()
+data = cur.fetchall()
 
-random = SexRandom()
-print random.create()
+print data
 
-random = TimeRandom()
-print random.create()
+conn.rollback()
 
-random = UserNameRandom()
-print random.create()
+cur.execute("select * from user where id = '666'")
 
-print hasattr(random, 'create')
+data = cur.fetchall()
 
-print type('123') == str
+print 'haha', data
 
-def create_time(year, month, day):
-    print time.mktime(datetime.datetime(year, month, day).timetuple())
+# db.dispose()
 
-print time.mktime(datetime.datetime.now().timetuple())
-
-create_time(2017, 3, 12)
-
-print datetime.datetime.fromtimestamp(1489248000.0)
+# Faker.table_name("user") \
+#     .param("id", DataType.ID) \
+#     .param("name", DataType.USERNAME) \
+#     .param("birthday", DataType.TIME) \
+#     .param("phone", DataType.PHONE) \
+#     .param("address", DataType.ADDRESS) \
+#     .param("age", DataType.AGE) \
+#     .param("sex", DataType.SEX) \
+#     .param("email", DataType.EMAIL) \
+#     .insert_count(5) \
+#     .execute()

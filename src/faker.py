@@ -4,15 +4,18 @@ from asserts.asserts import Asserts
 from mapping import DATA_TYPE_MAPPING
 import collections
 from cache_dict import get_cache_obj
+from db_utils import DBHelper
 
 class Faker:
     """数据伪造器"""
 
     def __init__(self, table_name):
         self.table_name = table_name
+        self.total_count = 0
         self.count = None
         self.param_dict = collections.OrderedDict()
         self.sql_list = []
+        self.is_insert_to_db = False
 
     @classmethod
     def table_name(cls, name):
@@ -31,6 +34,8 @@ class Faker:
 
     def execute(self):
         """插入数据到数据库"""
+        self.is_insert_to_db = True
+
         # 1.检查参数
         self.check_param()
 
@@ -38,8 +43,30 @@ class Faker:
         self.generate_sql()
 
         # 3.执行SQL语句，插入数据到数据库
-        for sql in self.sql_list:
-            print sql
+        self.execute_sql()
+
+    def execute_sql(self):
+        # 执行SQL语句，插入数据到数据库
+
+        # 如果不插入数据，则只显示生成数据条数在控制台
+        if not self.is_insert_to_db:
+            logging.debug('successfully created [%s] data' % self.count)
+            return
+
+        db = DBHelper()
+        try:
+            # 插入数据到数据库
+            for sql in self.sql_list:
+                db.execute(sql)
+            # 提交操作
+            db.commit()
+        except:
+            logging.error('failed to insert data')
+            # 回滚操作
+            db.rollback()
+        finally:
+            # 释放连接
+            db.dispose()
 
     def check_param(self):
         """检查参数"""
@@ -49,6 +76,9 @@ class Faker:
 
     def generate_sql(self):
         """生成SQL语句"""
+
+
+        # 执行sql语句
         for x in range(self.count):
             param_names, param_values = self.generate_param_name_and_value()
 

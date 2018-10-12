@@ -1,4 +1,4 @@
-from custom.english_name_random import EnglishNameRandom
+from custom.custom_random import EnglishNameRandom
 from sql_faker import Faker, DataType, Values, Times
 
 Faker.table_name("user") \
