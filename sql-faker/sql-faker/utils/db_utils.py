@@ -19,7 +19,7 @@ class DBHelper:
         """获取连接"""
         global __POOL
         if DBHelper.__POOL is None:
-            __POOL = PooledDB(creator=db_info['creator'],
+            __POOL = PooledDB(creator=db_info['driver'],
                               maxconnections=5,
                               host=db_info['host'],
                               user=db_info['user'],
@@ -29,11 +29,11 @@ class DBHelper:
         return __POOL.connection()
 
     @staticmethod
-    def db_setting(db, creator=pymysql, user='root', passwd='123456', host='localhost', port=3306):
+    def db_setting(db, driver=pymysql, user='root', passwd='123456', host='localhost', port=3306):
         """设置数据库配置信息"""
         db_info.update({
             'db': db,
-            'creator': creator,
+            'driver': driver,
             'user': user,
             'passwd': passwd,
             'host': host,

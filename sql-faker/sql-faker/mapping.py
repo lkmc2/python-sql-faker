@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from datatype import DataType
+from utils.datatype import DataType
 from random_data.address_random import AddressRandom
 from random_data.age_random import AgeRandom
 from random_data.email_random import EmailRandom

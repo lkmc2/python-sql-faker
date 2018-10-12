@@ -1,8 +1,9 @@
 # coding=utf-8
-from datatype import DataType
-from values import Values
-from times import Times
-from db_utils import DBHelper
+from utils.datatype import DataType
+from utils.values import Values
+from utils.times import Times
+from utils.db_utils import DBHelper
+from random_data.random_abstract import RandomData
 from faker import Faker
 
 # 数据类型
@@ -16,6 +17,9 @@ Times = Times
 
 # 数据库连接池助手
 DBHelper = DBHelper
+
+# 随机值抽象类
+RandomData = RandomData
 
 # 数据伪造器
 Faker = Faker

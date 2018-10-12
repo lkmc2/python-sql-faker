@@ -1,10 +1,10 @@
 # coding=utf-8
 import logging
+import collections
 from asserts.asserts import Asserts
 from mapping import DATA_TYPE_MAPPING
-import collections
-from cache_dict import get_cache_obj
-from db_utils import DBHelper
+from utils.cache_dict import get_cache_obj
+from utils.db_utils import DBHelper
 
 # 日志打印级别为DEBUG
 logging.basicConfig(level=logging.DEBUG)
@@ -39,13 +39,25 @@ class Faker:
     def execute(self):
         """插入数据到数据库"""
         self.is_insert_to_db = True
+        # 执行主要逻辑
+        self.execute_main_logic()
 
+    def only_show_sql(self):
+        """只显示生成的SQL，不插入数据到数据库"""
+        self.is_insert_to_db = False
+        # 执行主要逻辑
+        self.execute_main_logic()
+
+    def ignored(self):
+        """不执行任何操作"""
+        pass
+
+    def execute_main_logic(self):
+        """执行主要逻辑"""
         # 1.检查参数
         self.check_param()
-
         # 2.生成SQL语句
         self.generate_sql()
-
         # 3.执行SQL语句，插入数据到数据库
         self.execute_sql()
 
@@ -57,6 +69,7 @@ class Faker:
             logging.debug('successfully create [ %s ] data' % self.count)
             return
 
+        # 创建数据库连接池
         db = DBHelper()
         try:
             # 插入数据到数据库
