@@ -1,66 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95926974-1829-4454-9a7a-d6e06520713c" name="Default" comment="完成调整项目结构">
-      <change afterPath="$PROJECT_DIR$/sql_faker/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/asserts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/asserts/asserts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/examples.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/faker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/mapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/address_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/age_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/email_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/id_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/phone_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/random_abstract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/sex_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/time_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/random_data/username_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/sql/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/sql/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/sql_faker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/cache_dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/datatype.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/db_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/times.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker/utils/values.py" afterDir="false" />
+    <list default="true" id="95926974-1829-4454-9a7a-d6e06520713c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/asserts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/asserts/asserts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/examples.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/faker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/mapping.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/address_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/age_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/email_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/id_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/phone_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/random_abstract.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/sex_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/time_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/random_data/username_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/sql/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/sql/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/sql_faker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/cache_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/datatype.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/db_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/times.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql-faker/sql-faker/utils/values.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_faker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_faker/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -118,11 +62,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql_faker/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql_faker/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -197,6 +159,8 @@
         <option value="$PROJECT_DIR$/sql-faker/sql-faker/sql_faker.py" />
         <option value="$PROJECT_DIR$/sql-faker/sql-faker/utils/times.py" />
         <option value="$PROJECT_DIR$/sql-faker/sql-faker/examples.py" />
+        <option value="$PROJECT_DIR$/sql_faker/__init__.py" />
+        <option value="$PROJECT_DIR$/sql_faker/setup.py" />
       </list>
     </option>
   </component>
@@ -230,12 +194,6 @@
             <path>
               <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
               <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -508,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539340046518</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="修改目录结构">
+      <created>1539346607831</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1539346607831</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -521,7 +486,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49851632" weight="0.25839794" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32816538" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.59792286" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.59792286" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32937685" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -561,7 +526,8 @@
     <MESSAGE value="进一步完善连接池的功能" />
     <MESSAGE value="修复日志不输出的问题" />
     <MESSAGE value="完成调整项目结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成调整项目结构" />
+    <MESSAGE value="修改目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -665,7 +631,21 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql_faker/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql_faker/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>

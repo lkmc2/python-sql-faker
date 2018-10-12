@@ -50,7 +50,7 @@ insert into user(name,age,sex,address,birthday) values('任徐', 54, '河南省�
 本开源库另外依赖了DBUtils和pymysql库，需要一起进行pip安装。
 
 ``` python
-pip install sql_faker
+pip install sql-faker
 pip install DBUtils
 pip install pymysql
 ```
