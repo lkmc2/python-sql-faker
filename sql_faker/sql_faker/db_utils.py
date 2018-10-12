@@ -11,11 +11,11 @@ class DBHelper:
     __POOL = None
 
     def __init__(self):
-        self.conn = self.get_conn()
+        self.conn = self.__get_conn()
         self.cur = self.conn.cursor()
 
     @staticmethod
-    def get_conn():
+    def __get_conn():
         """获取连接"""
         global __POOL
         if DBHelper.__POOL is None:
