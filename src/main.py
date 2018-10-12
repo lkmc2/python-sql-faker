@@ -1,10 +1,5 @@
-import random
+from custom.english_name_random import EnglishNameRandom
 from sql_faker import Faker, DataType, Values, Times
-
-class EnglishNameRandom:
-    def create(self):
-        return random.choice(['jack', 'andy', 'kim'])
-
 
 Faker.table_name("user") \
     .param("id", DataType.ID) \
