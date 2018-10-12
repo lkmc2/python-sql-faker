@@ -6,6 +6,10 @@ import collections
 from cache_dict import get_cache_obj
 from db_utils import DBHelper
 
+# 日志打印级别为DEBUG
+logging.basicConfig(level=logging.DEBUG)
+
+
 class Faker:
     """数据伪造器"""
 
@@ -50,18 +54,19 @@ class Faker:
 
         # 如果不插入数据，则只显示生成数据条数在控制台
         if not self.is_insert_to_db:
-            logging.debug('successfully created [%s] data' % self.count)
+            logging.debug('successfully create [ %s ] data' % self.count)
             return
 
         db = DBHelper()
         try:
             # 插入数据到数据库
             for sql in self.sql_list:
-                db.execute(sql)
+                self.total_count += db.execute(sql)
             # 提交操作
             db.commit()
+            logging.debug('successfully insert [ %s ] data to database' % self.total_count)
         except:
-            logging.error('failed to insert data')
+            logging.error('failed to insert data, database is rollback')
             # 回滚操作
             db.rollback()
         finally:
@@ -76,9 +81,6 @@ class Faker:
 
     def generate_sql(self):
         """生成SQL语句"""
-
-
-        # 执行sql语句
         for x in range(self.count):
             param_names, param_values = self.generate_param_name_and_value()
 
