@@ -1,7 +1,4 @@
 # coding=utf-8
-import sys
-sys.path.append("..")
-
 from datatype import DataType
 from values import Values
 from times import Times
@@ -26,3 +23,5 @@ RandomData = RandomData
 
 # 数据伪造器
 Faker = Faker
+
+__version__ = '1.1.4'

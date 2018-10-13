@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95926974-1829-4454-9a7a-d6e06520713c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker-1.1.4-py2-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql_faker/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/faker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/sql_faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/sql_faker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/cache_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/cache_dict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/datatype.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/datatype.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/db_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/db_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/times.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/times.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/utils/values.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/values.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +67,17 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql_faker/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="152">
+              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql_faker/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -84,10 +85,10 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="362">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="e#15#44#0" expanded="true" />
+                <element signature="e#17#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/examples.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="74" />
+              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="e#15#89#0" expanded="true" />
               </folding>
@@ -256,7 +257,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="713" />
     <option name="width" value="734" />
     <option name="height" value="907" />
@@ -279,12 +280,6 @@
             <path>
               <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-sql-faker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-sql-faker" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
               <item name="sql_faker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -573,11 +568,19 @@
       <option name="project" value="LOCAL" />
       <updated>1539350024943</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改项目结构">
+      <created>1539360445781</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1539360445781</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="713" y="0" width="734" height="907" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014837" side_tool="true" weight="0.25839794" />
@@ -585,8 +588,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32945737" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32816538" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49851632" weight="0.25839794" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32816538" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.43175074" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32439336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21060172" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32937685" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -628,7 +631,8 @@
     <MESSAGE value="完成调整项目结构" />
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="修改项目描述" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改项目描述" />
+    <MESSAGE value="修改项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改项目结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,6 +654,16 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/faker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/values.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -737,13 +751,6 @@
     <entry file="file://$PROJECT_DIR$/sql-faker/sql-faker/examples.py" />
     <entry file="file://$PROJECT_DIR$/sql-faker/LICENSE" />
     <entry file="file://$PROJECT_DIR$/sql-faker/setup.py" />
-    <entry file="file://$PROJECT_DIR$/sql_faker/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -757,9 +764,6 @@
           <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/random_data/address_random.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/asserts/asserts.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -816,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/examples.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="74" />
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="e#15#89#0" expanded="true" />
           </folding>
@@ -833,20 +837,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sql_faker/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql_faker/sql_faker/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="362">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="e#15#44#0" expanded="true" />
+            <element signature="e#17#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_faker/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="152">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
