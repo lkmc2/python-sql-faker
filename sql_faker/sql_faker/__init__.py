@@ -24,4 +24,4 @@ RandomData = RandomData
 # 数据伪造器
 Faker = Faker
 
-__version__ = '1.1.5'
+__version__ = '1.1.6'

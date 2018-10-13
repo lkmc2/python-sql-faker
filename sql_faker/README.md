@@ -61,7 +61,7 @@ pip install pymysql
 
 ```cmd
 cd 下载路径
-pip install sql_faker-1.1.4-py2-none-any.whl
+pip install sql_faker-1.1.6-py2-none-any.whl
 ```
 
 
