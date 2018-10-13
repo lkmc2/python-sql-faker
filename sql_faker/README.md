@@ -50,10 +50,21 @@ insert into user(name,age,sex,address,birthday) values('任徐', 54, '河南省�
 本开源库另外依赖了DBUtils和pymysql库，需要一起进行pip安装。
 
 ``` python
-pip install sql_faker
+pip install sql-faker
 pip install DBUtils
 pip install pymysql
 ```
+
+如果安装不成功，点此连接进行下载whl文件 <a href="https://raw.githubusercontent.com/lkmc2/python-sql-faker/master/sql_faker/sql_faker-1.1.5-py2-none-any.whl">点击下载</a>。
+
+然后在控制台中移动到文件下载路径执行如下命令：
+
+```cmd
+cd 下载路径
+pip install sql_faker-1.1.4-py2-none-any.whl
+```
+
+
 
 **注意**：默认使用MySQL数据库，如需更换成Oracle、SQL Server、SQLite等DBUtils连接池支持的数据库，可另行添加依赖，并在DBHelper.db_setting(driver=驱动对象)方法中指定数据库驱动。
 

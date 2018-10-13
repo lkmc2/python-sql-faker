@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95926974-1829-4454-9a7a-d6e06520713c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sql_faker/sql_faker-1.1.4-py2-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_faker/sql_faker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_faker/sql_faker/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -257,7 +254,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="713" />
     <option name="width" value="734" />
     <option name="height" value="907" />
@@ -298,19 +295,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PythonWorkplace\python-sql-faker\sql_faker" />
+      <recent name="F:\PythonWorkplace\python-sql-faker\sql_faker\sql_faker" />
+      <recent name="F:\PythonWorkplace\python-sql-faker" />
+      <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker" />
+      <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker\sql-faker\sql" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\PythonWorkplace\python-sql-faker\sql_faker\sql_faker" />
       <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker\sql-faker" />
       <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker\sql-faker\faker" />
       <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker\sql-faker\utils" />
       <recent name="F:\PythonWorkplace\python-sql-faker\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\PythonWorkplace\python-sql-faker\sql_faker\sql_faker" />
-      <recent name="F:\PythonWorkplace\python-sql-faker\sql_faker" />
-      <recent name="F:\PythonWorkplace\python-sql-faker" />
-      <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker" />
-      <recent name="F:\PythonWorkplace\python-sql-faker\sql-faker\sql-faker\sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -575,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539360445781</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="添加whl文件">
+      <created>1539398624262</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1539398624263</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -632,7 +636,8 @@
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="修改项目描述" />
     <MESSAGE value="修改项目结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改项目结构" />
+    <MESSAGE value="添加whl文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加whl文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
