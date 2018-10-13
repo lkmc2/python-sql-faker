@@ -55,7 +55,7 @@ pip install DBUtils
 pip install pymysql
 ```
 
-如果安装不成功，点此连接进行下载whl文件 <a href="https://raw.githubusercontent.com/lkmc2/python-sql-faker/master/sql_faker/sql_faker-1.1.5-py2-none-any.whl">点击下载</a>。
+如果安装不成功，点此连接进行下载whl文件 <a href="https://raw.githubusercontent.com/lkmc2/python-sql-faker/master/sql_faker/sql_faker-1.1.6-py2-none-any.whl">点击下载</a>。
 
 然后在控制台中移动到文件下载路径执行如下命令：
 
