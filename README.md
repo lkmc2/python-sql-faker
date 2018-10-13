@@ -55,13 +55,13 @@ pip install DBUtils
 pip install pymysql
 ```
 
-如果安装不成功，点此连接进行下载whl文件 <a href="https://raw.githubusercontent.com/lkmc2/python-sql-faker/master/sql_faker/sql_faker-1.1.6-py2-none-any.whl">点击下载</a>。
+如果安装不成功，点此连接进行下载whl文件 <a href="https://raw.githubusercontent.com/lkmc2/python-sql-faker/master/sql_faker/sql_faker-1.1.7-py2-none-any.whl">点击下载</a>。
 
 然后在控制台中移动到文件下载路径执行如下命令：
 
 ```cmd
 cd 下载路径
-pip install sql_faker-1.1.6-py2-none-any.whl
+pip install sql_faker-1.1.7-py2-none-any.whl
 ```
 
 
@@ -241,7 +241,7 @@ Values类共有以下8种生成取值范围方法，如下表：
 |         Values.of(可变长参数)          |             从可变长参数中任意抽取一个值              |  "优品", "良品", "次品"   |
 |   Values.of_int_range(起始值,结束值)    |          在[起始值, 结束值]的范围内取一个整数           |         33          |
 | Values.of_float_range(起始值,结束值,精度) | 在[起始值, 结束值]的范围内取一个浮点数，默认精确到小数点后2位，最多10位 |     123.333333f     |
-|   Values.ofTimeRange(开始时间，结束时间)   |       在[开始时间, 结束时间]的范围内取一个时间，精确到秒       | 2018-03-14 13:21:11 |
+|   Values.of_time_range(开始时间，结束时间)   |       在[开始时间, 结束时间]的范围内取一个时间，精确到秒       | 2018-03-14 13:21:11 |
 
 另外，Times类中还有用于设定时间的两个方法：
 

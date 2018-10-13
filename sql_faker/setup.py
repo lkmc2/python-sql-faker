@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sql-faker",
-    version="1.1.6",
+    version="1.1.7",
     author="lkmc2",
     author_email="lkmc2@163.com",
     description="A lightweight SQL data creator",
