@@ -4,7 +4,7 @@ import random
 
 
 class UserNameRandom(RandomData):
-    """用户名生成器（中文名，长度为1到4个字）"""
+    """用户名生成器（中文名，长度为2到4个字）"""
 
     def create(self):
         first_name = random.choice(first_names)
